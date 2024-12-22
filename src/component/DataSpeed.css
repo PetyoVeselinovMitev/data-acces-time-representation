@@ -1,0 +1,112 @@
+.dataSpeedContainer {
+    width: 900px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 200px;
+    background: white;
+}
+
+.dataSpeedContainer h2 {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.dataSpeedContainer p {
+    font-size: 1.2rem;
+}
+
+.animationCointainer {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.dataSpeedContainer input {
+    width: 70%;
+}
+
+.CPU {
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 190px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.componentsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.componentsContainer h2 {
+    border: 1px solid black;
+    padding: 10px 25px;
+    border-radius: 15px;
+}
+
+.dotsContainer {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.dotsContainer {
+    position: relative;
+}
+
+.dotBox {
+    width: 40px;
+    height: 40px;
+}
+
+.dotl1,
+.dotl2,
+.dotl3,
+.ram {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+}
+
+.dotl1 {
+    background: greenyellow;
+}
+
+.dotl2 {
+    background: red;
+}
+
+.dotl3 {
+    background: teal;
+}
+
+.ram {
+    background: blue;
+}
+
+@keyframes moveDots {
+    0%{
+        left: calc(50% - 20px);
+    }
+    25% {
+        left: -40px;
+    }
+
+    75% {
+        left: 100%;
+    }
+
+    100% {
+        left: calc(50% - 20px);
+    }
+}
